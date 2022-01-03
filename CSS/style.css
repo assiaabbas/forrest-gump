@@ -1,0 +1,297 @@
+html, body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/************************************ Nav Barre*****************************************************************/
+
+a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+#menu{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    padding-left: 8%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+#logo-moncine{
+    width: 38px;
+}
+#logo-moncine-2{
+    width: 110px;
+}
+
+
+
+#liste-menu{
+list-style-type:none;
+display: flex;
+margin-right:15%;
+
+}
+
+
+.liens{
+    margin: 0 20px 0 20px;/*haut droite bas gauche*/
+}
+
+section{
+    position: relative;
+    padding:100px 20% 100px;
+}
+
+ul#liste-menu{
+    text-align:initial;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+nav ul::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color:orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width:100%;
+    z-index: 1000;
+}
+nav> ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float:none;
+    width:100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:icon;
+    font-size: 12px;
+}
+/*************************************Block 1*************************************************************/
+
+#section-1{
+    background-image: url("../img-itanic/image-fond-titanic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 85%;
+    height: 600px; 
+}
+
+
+
+.block-film{
+    display: flex;
+    justify-content: center;
+}
+.block-image-film{
+    margin-left: 40px;
+}
+.resume{
+    margin-left: 40px; 
+}
+
+.texte-blanc{
+    font-size: 84px; 
+    font-family:"volkhov-bold";
+    color: #fff;
+    margin-left: 75px;
+}
+
+h1{
+    font: 84px "volkhov-bold";
+    color: #fff;
+}
+
+.bouton{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    transition: 0.2s;
+}
+
+.bouton:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.jaune{
+    background-color: #f1a501;
+}
+
+
+
+p{
+    font-family:Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    }
+
+
+.resume{
+box-sizing: 400px 400px;
+}
+
+
+.image-gauche{
+    float: left;
+}
+.paragraphe-droite{
+
+    width: 600px;
+    height: 230px;
+    left: 0px;
+    right: 400px;
+    top: 581px;
+    margin: left 400px;
+    top:500px
+     
+}
+
+#conteneur-acteurs{
+    display:flex;
+}
+/*affichage acteurs*/
+.conteneur-acteurs.contenur-acteurs-ligne {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+}
+
+.acteurs {
+  
+    position: relative;
+    vertical-align: top;
+    width: 130px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 20px;
+}
+
+
+.acteurs::after {
+    content:initial;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 100%;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+}
+
+.carte img {
+    max-width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.carte figure {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    border-radius: 24px;
+}
+
+.carte figcaption {
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    padding: 20px;
+    font-family: "poppins-regular";
+    font-weight: 500;
+    font-style: normal;
+    color: #5e6282;
+    box-sizing: border-box;
+}
+
+.carte figcaption p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.carte figcaption p:first-child {
+    font-family: "open-sans-regular";
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.img-kate-winslet{
+    width: 130px;
+}
+
+.img-dicaprio{
+    width: 130px;
+}
+
+/*******************************bloc2********************/
+
+#block-2{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
